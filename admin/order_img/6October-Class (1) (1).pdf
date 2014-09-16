@@ -1,0 +1,4 @@
+Upload: 6October-Class (1).pdf<br>Type: application/pdf<br>done<br />
+<b>Warning</b>:  filesize(): stat failed for 6October-Class (1).pdf in <b>/var/www/html/test_upload/download.php</b> on line <b>63</b><br />
+<br />
+<b>Warning</b>:  readfile(6October-Class (1).pdf): failed to open stream: No such file or directory in <b>/var/www/html/test_upload/download.php</b> on line <b>64</b><br />

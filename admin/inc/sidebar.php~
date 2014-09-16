@@ -1,0 +1,264 @@
+
+
+        <!-- begin SIDE NAVIGATION -->
+        <nav class="navbar-side" role="navigation">
+            <div class="navbar-collapse sidebar-collapse collapse">
+                <ul id="side" class="nav navbar-nav side-nav">
+                    <!-- begin SIDE NAV USER PANEL -->
+                    <li class="side-user hidden-xs">
+                        <img class="img-circle" src="img/profile-pic.jpg" alt="">
+                        <p class="welcome">
+                            <i class="fa fa-key"></i> تم تسجيل الدخول
+                        </p>
+                        <p class="name tooltip-sidebar-logout">
+                            <?php echo $_SESSION['admin'] ?> 
+                            <a style="color: inherit" class="logout_open" href="#logout" data-toggle="tooltip" data-placement="top" title="تسجيل خروج">
+                            <i class="fa fa-sign-out"></i></a>
+                        </p>
+                        <div class="clearfix"></div>
+                    </li>
+                    <!-- end SIDE NAV USER PANEL -->
+                    <!-- begin SIDE NAV SEARCH -->
+                    <li class="nav-search">
+                        <form role="form">
+                            <input type="search" class="form-control" placeholder="ابحث هنا ...">
+                            <button class="btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <!-- end SIDE NAV SEARCH -->
+                    <!-- begin DASHBOARD LINK -->
+                    <li>
+                        <a class="active" href="index.html">
+                            <i class="fa fa-dashboard"></i> الرئيسية
+                        </a>
+                    </li>
+                    <!-- end DASHBOARD LINK -->
+                   
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#general">
+                            <i class="fa fa-inbox"></i>اعدادت عامة<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="general">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>المستخدمين
+                                </a>
+                            </li>
+                            <li>
+                                <a href="studyPayment.php">
+                                    <i class="fa fa-angle-double-left"></i>المصروفات الدراسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="standardpayment.php">
+                                    <i class="fa fa-angle-double-left"></i>المصروفات الثابتة
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+                   
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
+                            <i class="fa fa-inbox"></i> العلاقات العامة <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="message-center">
+                            <li>
+                                <a href="student-applications.php">
+                                    <i class="fa fa-angle-double-left"></i> طلبات الالتحاق بالمعهد
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#studies-affairs">
+                            <i class="fa fa-inbox"></i> الشئون الدراسية <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="studies-affairs">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i> المواد الدراسية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i> توزيع المنهج
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i> الجداول الدراسية
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#control">
+                            <i class="fa fa-inbox"></i> الكنترول <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="control">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i> النتائج الدراسية
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#students-affairs">
+                            <i class="fa fa-inbox"></i> شئون الطلاب <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="students-affairs">
+                            <li>
+                                <a href="all-students.php">
+                                    <i class="fa fa-angle-double-left"></i>الطلاب
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>استخراج اثبات قيد
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>استخراج اثبات تدريب
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>استخراج الشهادة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>استخراج بدل فاقد الشهادة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>كشوف الغياب
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#work-affairs">
+                            <i class="fa fa-inbox"></i> شئون العاملين <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="work-affairs">
+                            <li>
+                                <a href="empolyee-applications.php">
+                                    <i class="fa fa-angle-double-left"></i>طلبات التوظيف
+                                </a>
+                            </li>
+                            <li>
+                                <a href="all-empolyee.php">
+                                    <i class="fa fa-angle-double-left"></i>الموظفين
+                                </a>
+                            </li>
+                            <li>
+                                <a href="addDecision.php">
+                                    <i class="fa fa-angle-double-left"></i>إضافة قرارات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="addreview.php">
+                                    <i class="fa fa-angle-double-left"></i>إضافة تقييم
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#reception">
+                            <i class="fa fa-inbox"></i>الإستقبال<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="reception">
+                            <li>
+                                <a href="viewEmployeeAbscence.php">
+                                    <i class="fa fa-angle-double-left"></i>بيان التأخير والغياب
+                                </a>
+                            </li>
+			    <li>
+                                <a href="addEmployeeAbscence.php">
+                                    <i class="fa fa-angle-double-left"></i>غياب اليوم
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+                    <!-- begin  DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#financial">
+                            <i class="fa fa-inbox"></i>الحسابات<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="financial">
+                            <li>
+                                <a href="recieveReciept.php">
+                                    <i class="fa fa-angle-double-left"></i>إيصالات الإستلام
+                                </a>
+                            </li>
+                            <li>
+                                <a href="payreceipt.php">
+                                    <i class="fa fa-angle-double-left"></i>إيصالات الدفع
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-angle-double-left"></i>كشف المرتبات
+                                </a>
+                            </li>
+                            <li>
+                                <a href="allpayment.php">
+                                    <i class="fa fa-angle-double-left"></i>كشف حركة الخزينة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="all_clients.php">
+                                    <i class="fa fa-angle-double-left"></i>العملاء
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end  DROPDOWN -->
+
+
+
+
+                   
+                </ul>
+                <!-- /.side-nav -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- /.navbar-side -->
+        <!-- end SIDE NAVIGATION -->
